@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'moneta'
-gem 'json'
+gemspec
 
 group :test do
   gem 'rspec'

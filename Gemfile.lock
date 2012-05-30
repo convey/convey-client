@@ -1,3 +1,10 @@
+PATH
+  remote: .
+  specs:
+    convey_client (0.1.0)
+      json
+      moneta
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -18,7 +25,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  convey_client!
   fakeweb
-  json
-  moneta
   rspec
