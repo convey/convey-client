@@ -39,12 +39,12 @@ Get all items made with a specific convey.io template
 
 Get all items from a specific bucket, made with the given template
 
-  ConveyClient::Items.in_bucket_and_using_template("convey-bucket-id", "convey-template-id")
+    ConveyClient::Items.in_bucket_and_using_template("convey-bucket-id", "convey-template-id")
 
 For any request returning a collection, you can search and sort (limiting coming soon), for example:
 
-  ConveyClient::Items.all.sorted("published_on", "desc") # get all items, sorted by the published_on attribute
-  ConveyClient::Items.all.where("published_on" ">", "2012-05-30") # get all items published after May 30, 2012
+    ConveyClient::Items.all.sorted("published_on", "desc") # get all items, sorted by the published_on attribute
+    ConveyClient::Items.all.where("published_on" ">", "2012-05-30") # get all items published after May 30, 2012
 
 The available searching operators are: >, <, >=, <=, =, !=, contains, does_not_contain
 
